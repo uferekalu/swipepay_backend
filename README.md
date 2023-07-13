@@ -19,16 +19,12 @@ npm install
 To start the project, run this at the root of the project:
 ```
 npm start
-``
+```
 
 To run the project locally and connect to the [MongoDB](https://www.mongodb.com) database and use [Stripe](https://stripe.com) payment integration, create a .env file and add the following:
 
 ```
 MONGODB_URI="Your MongoDB Connection string"
-```
-```
 jwtSecret="choose a strong jwt secret"
-```
-```
 stripeSecretKey="Your stripe secret key"
 ```
