@@ -13,6 +13,10 @@ const corsOptions = {
 }
 app.use(cors(corsOptions));
 
+app.get("/", (req, res) => {
+  res.send("Swipe pay Checkout process");
+});
+
 app.use("/api/auth", require('./routes/userRoutes'))
 app.use("/api/checkout", require("./routes/checkoutRoute"))
 app.use("/api/orderHistory", require("./routes/orderHistory"))
