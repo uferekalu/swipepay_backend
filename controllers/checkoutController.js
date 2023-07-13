@@ -10,7 +10,7 @@ const checkout = async (req, res) => {
 
     try {
         // Verify the JWT token
-        const token = req.headers.authorization.split(' ')[1]
+        const token = req.headers.authorization?.split(' ')[1]
         const decodedToken = jwt.verify(token, process.env.jwtSecret)
         const userId = decodedToken.userId;
 
